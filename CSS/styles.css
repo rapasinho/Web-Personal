@@ -1,0 +1,396 @@
+html,body{
+	font-size: calc(5px + 1vw);
+	background: url(../imagenes/background.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	font-family:'Opens Sans',helvetica;  
+	height:100;
+	width:100%;
+	margin: 0px;
+}
+
+.contenedor {
+	display: flex;
+	flex-direction: column;	
+	padding: 10;
+}
+
+#cabecera {
+	
+	background: url(../imagenes/cabecera.gif);
+	background-size: 100% 100%;
+	padding: 10px 0px 10px 0px;
+    color: #00bdff;
+	width: auto;
+	height: auto;
+	font-family:fantasy;
+	text-align:center;
+	font-size:1.3em;
+}
+
+#cabecera:hover {
+	color: greenyellow;
+}
+
+
+.menu {
+	background: url(../imagenes/boton-menu.jpg);
+	display: grid;
+	grid-template-columns: auto auto auto;
+
+}
+
+#fondomenu {
+	background: url(../imagenes/boton-menu.jpg);
+	width: 485px;
+	height: 30px;
+}
+
+#fondomenu ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+	
+#fondomenu ul li a {
+	background: url(../imagenes/boton-menu.jpg);
+	width: 120px;
+	height: 30px;
+	margin-left: 1px;
+	float: left;
+	text-align: center;
+	line-height: 30px;
+	font-size: 13px;
+	color: bisque;
+	text-decoration: none;
+	display: block;
+}
+	
+#fondomenu ul li a:hover {
+	background: gray;
+	color: greenyellow;
+}
+
+header {
+	margin: 0 0 2em 0;
+}
+
+header > p {
+	margin: 1em 0 0 0;
+}
+
+/* Container */
+
+.contenedorSection {
+	margin: 0 auto;
+	max-width: 100%;
+	width: 1400px;
+}
+
+	@media screen and (min-width: 961px) and (max-width: 1880px) {
+
+		.contenedorSection {
+			width: 1200px;
+		}
+
+	}
+
+	@media screen and (min-width: 961px) and (max-width: 1620px) {
+
+		.contenedorSection {
+			width: 960px;
+		}
+
+	}
+
+	@media screen and (min-width: 961px) and (max-width: 1320px) {
+
+		.contenedorSection {
+			width: 100%;
+		}
+
+	}
+
+
+
+	@media screen and (max-width: 960px) {
+
+		.contenedorSection {
+			width: 100%;
+		}
+
+	}
+
+	@media screen and (max-width: 736px) {
+
+		.contenedorSection {
+			width: 100%;
+		}
+
+	}
+
+/* Main */
+
+
+
+#main > section {
+	margin: 0;
+	overflow: hidden;
+	padding: 4em 0;
+	text-align: center;
+}
+
+#main > section.dark {
+	color: #ddd;
+	color: rgba(255, 255, 255, 0.75);
+}				
+
+#main > section.dark a {
+	color: red;
+	border-color: inherit;
+}
+
+#main > section.cover {
+	padding: 10em 0;
+	background-size: cover;
+	background-position: center center;
+}
+
+/*Seccion Contacto*/
+
+
+.contact_form{  
+	width: 460px; 
+	height: auto;
+	margin: 80px auto;
+	border-radius: 10px;  
+	padding-top: 30px;
+	padding-bottom: 20px;  
+	background-color: #fbfbfb; 
+	padding-left: 30px; 
+}
+  
+  
+input{
+	background-color: #fbfbfb; 
+	width: 408px; 
+	height: 40px; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 1px; 
+	border-color: burlywood; 
+	margin-top: 10px;  
+	padding-left: 10px;
+	margin-bottom: 20px; 
+  }
+  
+  
+textarea{
+	background-color: #fbfbfb; 
+	width: 405px; 
+	height: 150px; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 1px; 
+	border-color:black; 
+	margin-top: 10px;  
+	padding-left: 10px;
+	margin-bottom: 20px; 
+	padding-top: 15px; 
+}
+  
+  
+label{
+	display: block; 
+	float: center;  
+}
+  
+  
+button{
+	height: 45px; 
+	padding-left: 5px;
+	padding-right: 5px;   
+	margin-bottom: 20px; 
+	margin-top: 10px;   
+	text-transform: uppercase;
+	background-color: grey; 
+	border-color: black; 
+	border-style: solid; 
+	border-radius: 10px;  
+	width: 420px;   
+	cursor: pointer;
+}
+  
+  
+button p{
+	color: #fff; 
+	align-items: center;
+}
+  
+  
+span{
+	color: #ab4493; 
+}
+  
+  
+.aviso{
+	font-size: 13px;  
+	color: #0e0e0e;  
+}
+  
+  
+h4{
+	font-size: 39px;  
+	text-align: letf; 
+	padding-bottom: 20px; 
+	color: #ab4493;
+}
+  
+  
+h3{
+	font-size: 16px; 
+	padding-bottom: 30px;
+	color: #0e0e0e;   
+}
+  
+  
+p{
+    font-size: 14px; 
+	color: #0e0e0e; 
+}
+  
+  
+::-webkit-input-placeholder {
+   color: #a8a8a8;
+}
+  
+  
+::-webkit-textarea-placeholder {
+   color: #a8a8a8;
+}
+  
+  
+.formulario input:focus{
+	outline:0;
+	border: 1px solid #97d848;
+}
+  
+  
+.formulario textarea:focus{
+	outline:0;
+	border: 1px solid #97d848;
+}
+			
+/* Mi perfil */
+.perfil {
+	font-family: 'Roboto', Arial, sans-serif;
+	position:inherit;
+	overflow: hidden;
+	margin: 10px;
+	min-width: 230px; 
+	max-width: 315px; 
+	width: 100%;
+	color: #141414; 
+	text-align: left;
+	line-height: 2.4em;
+	background-color: #141414;
+}
+.perfil * {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: all 0.25s ease;
+	transition: all 0.25s ease;
+}
+.perfil img {
+	max-width: 100%;
+	vertical-align: top;
+	opacity: 0.85;
+ }
+.perfil figcaption {
+	width: 100%;
+	background-color: burlywood; 
+	padding: 25px;
+	position: relative;
+}
+.perfil figcaption:before {
+	position: absolute;
+	content: '';
+	bottom: 100%;
+	left: 0;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 55px 0 0 400px;
+	border-color: transparent transparent transparent burlywood; 
+}
+.perfil figcaption a {
+	padding: 5px;
+	border: 1px solid #ffffff;
+	color: #141414;
+	font-size: 0.7em;
+	text-transform: uppercase;
+	margin: 10px 0;
+	display: inline-block;
+	opacity: 0.65;
+	width: 47%;
+	text-align: center;
+	text-decoration: none;
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+  .perfil figcaption a:hover {
+	opacity: 1;
+}
+.perfil .profile {
+	border-radius: 50%;
+	position: absolute;
+	bottom: 100%;
+	left: 25px;
+	z-index: 1;
+	max-width: 90px;
+	opacity: 1;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+.perfil .boton {
+	margin-right: 4%;
+	border-color: #2980b9;
+	color: #2980b9;
+}
+.perfil h2 {
+	margin: 0 0 5px;
+	font-weight: 300;
+}
+.perfil h2 span {
+	display: block;
+	font-size: 0.5em;
+	color: #2980b9;
+}
+.perfil p {
+	margin: 0 0 10px;
+	font-size: 0.8em;
+	letter-spacing: 1px;
+	opacity: 0.8;
+}			
+/* Footer */
+
+footer {
+    color: goldenrod;
+    background: url(../imagenes/fondo1.jpg);
+    width: 100%;
+    height: 2em;
+    position: relative;
+    bottom: 0;
+	left: 0;
+	text-align: end;
+	display: grid;
+	grid-template-rows: auto auto auto;
+	
+}
+
+.container div {
+	width: 100px;
+	height: 100px;
+  }
+
